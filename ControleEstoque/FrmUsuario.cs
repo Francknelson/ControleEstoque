@@ -44,23 +44,43 @@ namespace ControleEstoque
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            ModelUsuario model = new ModelUsuario();
-            DtoUsuario u = new DtoUsuario();
+            if (ValidarCampos())
+            {
+                ModelUsuario model = new ModelUsuario();
+                DtoUsuario u = new DtoUsuario();
 
-            u.nome = textNome.Text;
-            u.login = textLogin.Text;
-            u.senha = textSenha.Text;
+                u.nome = textNome.Text;
+                u.login = textLogin.Text;
+                u.senha = textSenha.Text;
 
-            if (textID.Text == String.Empty)
-                model.SetUsuario(u);
+                if (textID.Text == String.Empty)
+                {
+                    model.SetUsuario(u);
+                }
+                else
+                {
+                    u.id = int.Parse(textID.Text);
+                    model.EditarUsuario(u);
+                }
+            }
             else
-                u.id = int.Parse(textID.Text);
-                model.EditarUsuario(u);
-
+            {
+                FormAlertCampos f = new FormAlertCampos();
+                f.Show();
+            }
+            
             LimparCampos();
             DesabilitarText();
             CarregarGrid();
 
+        }
+
+        private bool ValidarCampos()
+        {
+            if (textNome.Text == String.Empty && textLogin.Text == String.Empty && textSenha.Text == String.Empty)
+                return false;
+            else 
+                return true;
         }
 
         private void DesabilitarText()

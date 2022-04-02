@@ -43,3 +43,4 @@ C:\Users\franc\source\repos\ControleEstoque\ControleEstoque\obj\Debug\ControleEs
 C:\Users\franc\source\repos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.FormAlertProd.resources
 C:\Users\franc\source\repos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.FormAlertUser.resources
 C:\Users\franc\source\repos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.FrmEntrada.resources
+C:\Users\franc\source\repos\ControleEstoque\ControleEstoque\obj\Debug\ControleEstoque.FormAlertCampos.resources

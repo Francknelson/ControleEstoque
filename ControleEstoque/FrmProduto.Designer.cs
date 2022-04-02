@@ -149,6 +149,7 @@
             this.textUnidade.Enabled = false;
             this.textUnidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUnidade.Location = new System.Drawing.Point(140, 180);
+            this.textUnidade.MaxLength = 12;
             this.textUnidade.Name = "textUnidade";
             this.textUnidade.Size = new System.Drawing.Size(156, 29);
             this.textUnidade.TabIndex = 3;
@@ -158,6 +159,7 @@
             this.textNome.Enabled = false;
             this.textNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNome.Location = new System.Drawing.Point(140, 145);
+            this.textNome.MaxLength = 50;
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(270, 29);
             this.textNome.TabIndex = 2;

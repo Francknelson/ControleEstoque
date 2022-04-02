@@ -77,6 +77,7 @@
             this.textNome.Enabled = false;
             this.textNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNome.Location = new System.Drawing.Point(80, 154);
+            this.textNome.MaxLength = 50;
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(274, 29);
             this.textNome.TabIndex = 1;
@@ -91,6 +92,7 @@
             this.textLogin.Enabled = false;
             this.textLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textLogin.Location = new System.Drawing.Point(80, 198);
+            this.textLogin.MaxLength = 12;
             this.textLogin.Name = "textLogin";
             this.textLogin.Size = new System.Drawing.Size(100, 29);
             this.textLogin.TabIndex = 3;
@@ -100,6 +102,7 @@
             this.textSenha.Enabled = false;
             this.textSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSenha.Location = new System.Drawing.Point(80, 244);
+            this.textSenha.MaxLength = 10;
             this.textSenha.Name = "textSenha";
             this.textSenha.PasswordChar = '*';
             this.textSenha.Size = new System.Drawing.Size(100, 29);

@@ -97,6 +97,12 @@
     <Compile Include="DtoUsuarioLista.cs" />
     <Compile Include="DtoUsuario.cs" />
     <Compile Include="DtoProduto.cs" />
+    <Compile Include="FormAlertCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlertCampos.Designer.cs">
+      <DependentUpon>FormAlertCampos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAlertProd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     <Compile Include="ModelUsuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAlertCampos.resx">
+      <DependentUpon>FormAlertCampos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAlertProd.resx">
       <DependentUpon>FormAlertProd.cs</DependentUpon>
     </EmbeddedResource>

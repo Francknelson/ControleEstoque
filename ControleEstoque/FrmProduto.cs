@@ -40,26 +40,49 @@ namespace ControleEstoque
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            ModelProduto model = new ModelProduto();
-            DtoProduto p = new DtoProduto
+            
+            if (ValidarCampos())
             {
-                nome = textNome.Text,
-                unidade = textUnidade.Text,
-                quantidade = int.Parse(textQuantidade.Text),
-                preco_venda = decimal.Parse(textPreco_venda.Text),
-                preco_custo = decimal.Parse(textPreco_custo.Text)
-            };
+
+                ModelProduto model = new ModelProduto();
+                DtoProduto p = new DtoProduto
+                {
+                    nome = textNome.Text,
+                    unidade = textUnidade.Text,
+                    quantidade = int.Parse(textQuantidade.Text),
+                    preco_venda = decimal.Parse(textPreco_venda.Text),
+                    preco_custo = decimal.Parse(textPreco_custo.Text)
+                };
 
 
-            if (textID.Text == String.Empty)
-                model.SetProduto(p);
+                if (textID.Text == String.Empty)
+                {
+                    model.SetProduto(p);
+                }
+                else
+                {
+                    p.id = int.Parse(textID.Text);
+                    model.EditarProduto(p);
+                }
+
+                LimparCampos();
+                DesabilitarText();
+                CarregarGrid();
+            }
             else
-                p.id = int.Parse(textID.Text);
-            model.EditarProduto(p);
+            {
+                FormAlertCampos f = new FormAlertCampos();
+                f.Show();
+            }
+            
+        }
 
-            LimparCampos();
-            DesabilitarText();
-            CarregarGrid();
+        private bool ValidarCampos()
+        {
+            if (textNome.Text == String.Empty && textUnidade.Text == String.Empty && textPreco_venda.Text == String.Empty && textPreco_custo.Text == String.Empty)
+                return false;
+            else
+                return true;
         }
 
         private void DesabilitarText()
