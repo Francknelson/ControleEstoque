@@ -32,11 +32,11 @@
             this.panelCabecalho = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelCorpo = new System.Windows.Forms.Panel();
+            this.btnUsuario = new System.Windows.Forms.Button();
             this.btnSaida = new System.Windows.Forms.Button();
             this.btnEntrada = new System.Windows.Forms.Button();
             this.btnProduto = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
+            this.panelCorpo = new System.Windows.Forms.Panel();
             this.panelCabecalho.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -74,13 +74,24 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 576);
             this.panelMenu.TabIndex = 1;
             // 
-            // panelCorpo
+            // btnUsuario
             // 
-            this.panelCorpo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCorpo.Location = new System.Drawing.Point(200, 100);
-            this.panelCorpo.Name = "panelCorpo";
-            this.panelCorpo.Size = new System.Drawing.Size(744, 576);
-            this.panelCorpo.TabIndex = 2;
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnUsuario.Image = global::ControleEstoque.Properties.Resources.icons8_person_64;
+            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuario.Location = new System.Drawing.Point(6, 228);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(191, 68);
+            this.btnUsuario.TabIndex = 3;
+            this.btnUsuario.Text = "Usuários";
+            this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsuario.UseVisualStyleBackColor = true;
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // btnSaida
             // 
@@ -99,6 +110,7 @@
             this.btnSaida.Text = "Saída";
             this.btnSaida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaida.UseVisualStyleBackColor = true;
+            this.btnSaida.Click += new System.EventHandler(this.btnSaida_Click);
             // 
             // btnEntrada
             // 
@@ -117,6 +129,7 @@
             this.btnEntrada.Text = "Entrada";
             this.btnEntrada.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEntrada.UseVisualStyleBackColor = true;
+            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
             // btnProduto
             // 
@@ -137,24 +150,13 @@
             this.btnProduto.UseVisualStyleBackColor = true;
             this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
-            // btnUsuario
+            // panelCorpo
             // 
-            this.btnUsuario.FlatAppearance.BorderSize = 0;
-            this.btnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUsuario.Image = global::ControleEstoque.Properties.Resources.icons8_person_64;
-            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuario.Location = new System.Drawing.Point(6, 228);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(191, 68);
-            this.btnUsuario.TabIndex = 3;
-            this.btnUsuario.Text = "Usuários";
-            this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuario.UseVisualStyleBackColor = true;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            this.panelCorpo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCorpo.Location = new System.Drawing.Point(200, 100);
+            this.panelCorpo.Name = "panelCorpo";
+            this.panelCorpo.Size = new System.Drawing.Size(744, 576);
+            this.panelCorpo.TabIndex = 2;
             // 
             // FrmPrincipal
             // 

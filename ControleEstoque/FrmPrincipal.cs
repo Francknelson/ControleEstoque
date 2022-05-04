@@ -28,5 +28,17 @@ namespace ControleEstoque
             FrmUsuario f = new FrmUsuario();
             f.Show();
         }
+
+        private void btnEntrada_Click(object sender, EventArgs e)
+        {
+            FrmEntrada f = new FrmEntrada();
+            f.Show();
+        }
+
+        private void btnSaida_Click(object sender, EventArgs e)
+        {
+            FrmSaida f = new FrmSaida();
+            f.Show();
+        }
     }
 }
